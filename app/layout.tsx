@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Zen_Kaku_Gothic_Antique } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
-const geist = Geist({
+const zenKaku = Zen_Kaku_Gothic_Antique({
+  weight: ["400", "700"],
   subsets: ["latin"],
-  variable: "--font-geist",
+  variable: "--font-zen-kaku",
 });
 
 export const metadata: Metadata = {
@@ -21,12 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${geist.variable} font-sans min-h-screen flex flex-col`}>
-        <Header />
-        <main className="flex-grow pt-16">
-          {children}
-        </main>
-        <Footer />
+      <body className={`${zenKaku.variable} font-zen min-h-screen flex flex-col bg-[#EEF2F6]`}>
+        {children}
       </body>
     </html>
   );

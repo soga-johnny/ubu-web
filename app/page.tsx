@@ -1,47 +1,185 @@
 import Image from "next/image";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Link from "next/link";
+import MorphLine from "./components/MorphLine";
 
 export default function Home() {
   return (
     <>
-      {/* ヒーローセクション */}
-      <section className="relative h-[70vh] min-h-[600px] animate-fade-in">
-        <div className="absolute inset-0 bg-black/40 z-10" />
-        <Image
-          src="/hero-image.jpg"
-          alt="書店の内観"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="relative z-20 h-full flex items-center justify-center text-white">
-          <div className="text-center animate-slide-up">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              あなたの物語が始まる場所
-            </h1>
-            <p className="text-lg md:text-xl">
-              BOOKSTOREで新しい本との出会いを
-            </p>
+      <Header />
+      <MorphLine />
+      <main>
+        {/* ヒーローセクション */}
+        <section className="relative h-screen">
+          <div className="absolute inset-0 z-10" />
+          <div className="relative z-20 h-full container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="h-full flex flex-col justify-center max-w-2xl">
+              <h1 className="text-2xl md:text-3xl mb-4">
+                ウブなトキメキを思い出して
+              </h1>
+              <p className="text-lg md:text-xl">
+                日本からカルチャーを産む本屋
+              </p>
+              
+              {/* 装飾的な線 */}
+              {/* 装飾的な線のdivは削除 */}
+              
+              {/* スクロールインジケーター */}
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center">
+                <span className="text-sm font-montserrat mb-2">Scroll</span>
+                <div className="h-16 w-px bg-current animate-scroll-indicator" />
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* おすすめ書籍セクション */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto animate-fade-in-delay">
-        <h2 className="text-3xl font-bold mb-8 text-center">今月のおすすめ</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* 書籍カードを後で追加 */}
-        </div>
-      </section>
-
-      {/* お知らせセクション */}
-      <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 animate-fade-in-delay-2">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">お知らせ</h2>
-          <div className="space-y-4">
-            {/* お知らせリストを後で追加 */}
+        {/* Aboutセクション */}
+        <section className="py-32 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* 縦線の装飾 */}
+              <div className="absolute left-0 top-0 w-px h-16 bg-current" />
+              
+              <div className="space-y-8">
+                <p className="text-lg leading-relaxed pl-8">
+                  UBU書店では、貴方のときめきにつながるかもしれない一冊 そして、貴方自身が自分と向き合う際に寄り添ってくれるかもしれない一冊、最後に、これからの日本を生き抜くためにヒントになるであろう一冊をメインに選書していきます。
+                </p>
+                <p className="text-lg leading-relaxed pl-8">
+                  貴方が貴方らしく前進していく過程で<br />
+                  ほんの少しでもお役に立てたら幸いです。
+                </p>
+                
+                <div className="text-right">
+                  <Link 
+                    href="/about" 
+                    className="inline-flex items-center text-sm font-montserrat hover:opacity-70 transition-opacity"
+                  >
+                    <span className="mr-2">More</span>
+                    <span className="w-4 h-px bg-current" />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+                {/* トキメキの本棚セクション */}
+                <section className="py-32 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+            <div className="relative w-full h-[300px] pl-8">
+                  <Image
+                    src="/sample-image.jpg"
+                    alt="トキメキの本棚"
+                    fill
+                    className="object-cover rounded-lg"
+                    priority
+                  />
+                </div>
+              {/* 縦線の装飾 */}
+              <div className="absolute left-0 top-0 w-px h-16 bg-current" />
+              
+              <div className="space-y-8 pt-12">
+                <h2 className="text-lg leading-relaxed">
+                  トキメキの本棚
+                </h2>
+                <p className="text-lg leading-relaxed">
+                サンプル文言サンプル文言サンプル文言サンプル文言<br />
+                  サンプル文言サンプル文言サンプル文言サンプル文言
+                </p>
+                
+                <div className="text-right">
+                  <Link 
+                    href="/about" 
+                    className="inline-flex items-center text-sm font-montserrat hover:opacity-70 transition-opacity"
+                  >
+                    <span className="mr-2">More</span>
+                    <span className="w-4 h-px bg-current" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-32 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+            <div className="relative w-full h-[300px] pl-8">
+                  <Image
+                    src="/sample-image.jpg"
+                    alt="トキメキの本棚"
+                    fill
+                    className="object-cover rounded-lg"
+                    priority
+                  />
+                </div>
+              {/* 縦線の装飾 */}
+              <div className="absolute left-0 top-0 w-px h-16 bg-current" />
+              
+              <div className="space-y-8 pt-12">
+                <h2 className="text-lg leading-relaxed">
+                  トキメキの本棚
+                </h2>
+                <p className="text-lg leading-relaxed">
+                サンプル文言サンプル文言サンプル文言サンプル文言<br />
+                  サンプル文言サンプル文言サンプル文言サンプル文言
+                </p>
+                
+                <div className="text-right">
+                  <Link 
+                    href="/about" 
+                    className="inline-flex items-center text-sm font-montserrat hover:opacity-70 transition-opacity"
+                  >
+                    <span className="mr-2">More</span>
+                    <span className="w-4 h-px bg-current" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-32 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+            <div className="relative w-full h-[300px] pl-8">
+                  <Image
+                    src="/sample-image.jpg"
+                    alt="トキメキの本棚"
+                    fill
+                    className="object-cover rounded-lg"
+                    priority
+                  />
+                </div>
+              {/* 縦線の装飾 */}
+              <div className="absolute left-0 top-0 w-px h-16 bg-current" />
+              
+              <div className="space-y-8 pt-12">
+                <h2 className="text-lg leading-relaxed">
+                  トキメキの本棚
+                </h2>
+                <p className="text-lg leading-relaxed">
+                サンプル文言サンプル文言サンプル文言サンプル文言<br />
+                  サンプル文言サンプル文言サンプル文言サンプル文言
+                </p>
+                
+                <div className="text-right">
+                  <Link 
+                    href="/about" 
+                    className="inline-flex items-center text-sm font-montserrat hover:opacity-70 transition-opacity"
+                  >
+                    <span className="mr-2">More</span>
+                    <span className="w-4 h-px bg-current" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }
