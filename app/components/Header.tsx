@@ -14,7 +14,7 @@ export default function Header() {
               className="object-contain"
             />
           </Link>
-          <button className="text-[#FB2321] p-2">
+          {/* <button className="text-[#FB2321] p-2">
             <svg
               width="24"
               height="24"
@@ -29,7 +29,7 @@ export default function Header() {
                 strokeLinecap="round"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
     </header>

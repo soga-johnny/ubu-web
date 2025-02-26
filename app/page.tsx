@@ -50,7 +50,7 @@ export default function Home() {
                   ほんの少しでもお役に立てたら幸いです。
                 </p>
                 
-                <div className="text-right">
+                {/* <div className="text-right">
                   <Link 
                     href="/about" 
                     className="inline-flex items-center text-sm font-montserrat hover:opacity-70 transition-opacity"
@@ -58,14 +58,35 @@ export default function Home() {
                     <span className="mr-2">More</span>
                     <span className="w-4 h-px bg-current" />
                   </Link>
-                </div>
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </section>
+
+                {/* Aboutセクション */}
+                <section className="py-32 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* 縦線の装飾 */}
+              <div className="absolute left-0 top-0 w-px h-16 bg-current" />
+              
+              <div className="space-y-8">
+                <p className="text-lg leading-relaxed pl-8">
+                   Coming Soon...
+                </p>
+                <p className="text-lg leading-relaxed pl-8">
+                  当webサイトは、より早く想いを知っていただけるように先行公開中です。<br />
+                  フルバージョンは、より魅力的なコンテンツをお届けできるように現在構築中です。
+                </p>
+                
               </div>
             </div>
           </div>
         </section>
 
                 {/* トキメキの本棚セクション */}
-                <section className="py-32 px-4 sm:px-6 lg:px-8">
+                {/* <section className="py-32 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="relative">
             <div className="relative w-full h-[300px] pl-8">
@@ -77,7 +98,7 @@ export default function Home() {
                     priority
                   />
                 </div>
-              {/* 縦線の装飾 */}
+              
               <div className="absolute left-0 top-0 w-px h-16 bg-current" />
               
               <div className="space-y-8 pt-12">
@@ -101,9 +122,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="py-32 px-4 sm:px-6 lg:px-8">
+        {/* <section className="py-32 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="relative">
             <div className="relative w-full h-[300px] pl-8">
@@ -115,7 +136,6 @@ export default function Home() {
                     priority
                   />
                 </div>
-              {/* 縦線の装飾 */}
               <div className="absolute left-0 top-0 w-px h-16 bg-current" />
               
               <div className="space-y-8 pt-12">
@@ -139,9 +159,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="py-32 px-4 sm:px-6 lg:px-8">
+        {/* <section className="py-32 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="relative">
             <div className="relative w-full h-[300px] pl-8">
@@ -153,7 +173,7 @@ export default function Home() {
                     priority
                   />
                 </div>
-              {/* 縦線の装飾 */}
+          
               <div className="absolute left-0 top-0 w-px h-16 bg-current" />
               
               <div className="space-y-8 pt-12">
@@ -177,7 +197,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>
