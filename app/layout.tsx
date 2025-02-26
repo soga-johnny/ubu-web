@@ -9,8 +9,8 @@ const zenKaku = Zen_Kaku_Gothic_Antique({
 });
 
 export const metadata: Metadata = {
-  title: "BOOKSTORE",
-  description: "あなたの本との出会いの場所",
+  title: "ubu book store",
+  description: "日本からカルチャーを産む、大阪・中津の本屋さん",
 };
 
 export default function RootLayout({
