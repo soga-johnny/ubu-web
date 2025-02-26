@@ -40,10 +40,10 @@ export default function Home() {
               <div className="absolute left-0 top-0 w-px h-16 bg-current" />
               
               <div className="space-y-8">
-                <p className="text-lg leading-relaxed pl-8">
+                <p className="text-sm leading-relaxed pl-8">
                   UBU書店では、貴方のときめきにつながるかもしれない一冊 そして、貴方自身が自分と向き合う際に寄り添ってくれるかもしれない一冊、最後に、これからの日本を生き抜くためにヒントになるであろう一冊をメインに選書していきます。
                 </p>
-                <p className="text-lg leading-relaxed pl-8">
+                <p className="text-sm leading-relaxed pl-8">
                   貴方が貴方らしく前進していく過程で<br />
                   ほんの少しでもお役に立てたら幸いです。
                 </p>
@@ -73,7 +73,7 @@ export default function Home() {
                 <p className="text-lg leading-relaxed pl-8">
                    Coming Soon...
                 </p>
-                <p className="text-lg leading-relaxed pl-8">
+                <p className="text-sm leading-relaxed pl-8">
                   当webサイトは、より早く想いを知っていただけるように先行公開中です。<br />
                   フルバージョンは、より魅力的なコンテンツをお届けできるように現在構築中です。
                 </p>
